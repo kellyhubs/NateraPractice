@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+import questions from '@/app/questions/questions'; // data for question form
+import QuestionForm from '@/components/QuestionForm'; //question form component 
+
 
 const Page = () => {
+    const [formState, setFormState] = useState()
+    
+    
+    
     return (
         <div>
             <h1>Question page</h1>
@@ -9,15 +16,3 @@ const Page = () => {
 };
 
 export default Page;
-
-
-// const QuestionsPage = () => {
-    
-//     return (
-//         <div>
-//             {<h1>Hello</h1>}
-//         </div>
-//     );
-// }
-
-// export default QuestionsPage;
