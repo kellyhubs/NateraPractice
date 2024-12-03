@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container{
+    max-width: 600px;
+}
+
+.form-check-label{
+    font-weight: 500;
+}
+
+.form-text{
+    font-size:15px;
+    color: lightgrey;
+}
