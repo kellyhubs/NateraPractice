@@ -2,15 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-.container{
-    max-width: 600px;
+
+#CloseButton{
+    font-size:12px;
+    float:inline-end;
+}
+
+#formTitle{
+    position: relative;
+    color:gray;
+}
+
+#description{
+    font-size: 13px;
+    margin-left:-290px;
+    padding-top:10px;
 }
 
 .form-check-label{
-    font-weight: 500;
+    margin-right: 330px;
 }
 
-.form-text{
-    font-size:15px;
-    color: lightgrey;
+.form-check-input{
+    margin-right:30px;
+    border-color: gray;
+    
 }

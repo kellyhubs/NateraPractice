@@ -2,6 +2,7 @@
 
 import 'bootstrap/dist/css/bootstrap.css' //bootstrap
 import "./globals.css";
+import "bootstrap-icons/font/bootstrap-icons.css"; //bootstrap icons
 
 export const metadata = {
   title: 'Natera Practice',
