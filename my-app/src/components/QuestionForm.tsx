@@ -43,7 +43,7 @@ const toggleCheckbox = (id:number) => { //id:number unique identifer (which box 
 // }
 
 return (
-    <div className="container mt-4 w-75 p-3 border rounded-3 bg-white shadow">
+    <div className="container mt-4 w-75 p-3 border rounded-3 bg-white shadow mr-5">
         <h2 className="text-start mb-3" id="formTitle">Form 2 <button className="btn-close" aria-label='Close' id="CloseButton"></button></h2>
         
         
