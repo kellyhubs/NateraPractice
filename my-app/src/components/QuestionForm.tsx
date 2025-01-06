@@ -24,24 +24,6 @@ const toggleCheckbox = (id:number) => { //id:number unique identifer (which box 
     });
 };
 
-// return (
-// <div className='card'>
-//         <div className='card-body'>
-//             <h6 className='card-title'>Form 2</h6>
-//             <button className='btn-close' aria-label='Close' id="CloseButton"></button>
-//             {questions.map((question) =>(
-//                 <div key={question.id}>
-//                     <h5>{question.title}</h5>
-//                     <p className="card-text">{question.description}</p>
-//                 </div>
-//             ))}
-//         </div>
-// </div>
-
-// );
-
-// }
-
 return (
     <div className="container mt-4 w-75 p-3 border rounded-3 bg-white shadow mr-5">
         <h2 className="text-start mb-3" id="formTitle">Form 2 <button className="btn-close" aria-label='Close' id="CloseButton"></button></h2>
@@ -79,20 +61,3 @@ return (
 
 
 export default QuestionForm;
-
-
-
-
-
-//<div className='row justify-content-center'>
-        //         <div className='col-md-6'>
-        //             <form onSubmit={handleSubmit} className='p-4 border rounded shadow-sm bg-white'>
-        //                 {questions.map((question) => (
-        //                     <QuestionForm //adding question form components and the data objects, rendering form
-        //                         key={question.id}
-        //                         title={question.title}
-        //                         description={question.description}
-        //                         checkboxLabel={question.checkboxLabel}
-        //                         onChange={(checked) => handleCheckboxChange(question.id, checked)}
-        //                     />
-        //                 ))}
