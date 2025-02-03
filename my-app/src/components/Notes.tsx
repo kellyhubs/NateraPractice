@@ -9,7 +9,7 @@ const Page = ({
   notesChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
 }) => {
   return (
-    <div className="mt-4 h-75 w-50 p-3 border rounded-3 bg-white shadow">
+    <div className="mt-4 w-50 p-3 border rounded-3 bg-white shadow">
       <div className="card-body">
         <h5 className="card-title text-start mb-6">
           <i className="bi bi-stickies" id="icon"></i> Notes
