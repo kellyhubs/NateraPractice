@@ -7,6 +7,8 @@ import FieldForm from "@/components/FieldForm";
 const Page = () => {
   const [formData, setFormData] = useState({
     notes: "",
+    field1: "",
+    field2: "",
   });
 
   const handleNoteChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -16,8 +18,24 @@ const Page = () => {
     }));
   };
 
+  const handleField1Change = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData((prev) => ({
+      ...prev,
+      field1: e.target.value,
+    }));
+  };
+
+  const handleField2Change = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData((prev) => ({
+      ...prev,
+      field2: e.target.value,
+    }));
+  };
+
   const handleSubmit = () => {
-    console.log("Data submitted successfully:", formData.notes);
+    console.log("Data submitted successfully for Field 1:", formData.field1);
+    console.log("Data submitted successfully for Field 2:", formData.field2);
+    console.log("Data submitted successfully for Notes:", formData.notes);
   };
 
   return (
@@ -25,7 +43,12 @@ const Page = () => {
       <div className="container text-center">
         <div className="row">
           <div className="col-lg-6 mb-4">
-            <FieldForm />
+            <FieldForm
+              field1={formData.field1} // need it own seprate handler for each field
+              field2={formData.field2}
+              field1Change={handleField1Change}
+              field2Change={handleField2Change}
+            />
           </div>
 
           <div className="col-lg-4">
