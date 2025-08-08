@@ -19,15 +19,15 @@ const Page = () => {
   };
 
   const handleField1Change = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData((prev) => ({
-      ...prev,
+    setFormData((prevData) => ({
+      ...prevData,
       field1: e.target.value,
     }));
   };
 
   const handleField2Change = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData((prev) => ({
-      ...prev,
+    setFormData((prevData) => ({
+      ...prevData,
       field2: e.target.value,
     }));
   };
